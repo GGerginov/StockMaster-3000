@@ -1,7 +1,5 @@
 package org.example.utill;
 
-
-
 import org.example.domain.Stock;
 
 import java.util.ArrayList;
@@ -12,8 +10,8 @@ import java.util.Random;
 public class StockGenerator {
 
     private static final Random RANDOM = new Random();
-    private static final int MAX_PRICE = 5; // Maximum price for generated stocks
-    private static final int NUM_STOCKS_TO_GENERATE = 10; // Number of stocks to generate
+    private static final int MAX_PRICE = 100;
+    private static final int NUM_STOCKS_TO_GENERATE = 10;
 
     private StockGenerator() {
         throw new IllegalStateException("Utility class");
@@ -48,7 +46,6 @@ public class StockGenerator {
 
         return stocks;
     }
-
 
 }
 
