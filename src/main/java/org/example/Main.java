@@ -1,7 +1,13 @@
 package org.example;
 
+import org.example.utill.StockGenerator;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        StockGenerator.generateRandomStocks().forEach(System.out::println);
+
+
+
     }
 }
