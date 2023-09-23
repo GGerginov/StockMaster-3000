@@ -23,7 +23,7 @@ class StockGeneratorTest {
 
     @BeforeEach
     void setUp() {
-        Method generateRandomStockMethod = null;
+        Method generateRandomStockMethod;
         try {
             generateRandomStockMethod = StockGenerator.class.getDeclaredMethod("generateRandomStock");
 
